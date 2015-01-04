@@ -41,6 +41,11 @@ $(function() {
     }, 600);
   });
 
+  $(".controls a.filter").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+  });
+
   $("#header .menu").naver({
      maxWidth: "740px"
   });
@@ -153,31 +158,31 @@ $(function() {
     marginTop: -(ph / 2),
   });
 
+  // $(".onepage-pagination li a[data-index='1']").append(
+  //   '<span class="popout one"><span class="type">Vision</span><i></i></span>'
+  // );
   $(".onepage-pagination li a[data-index='1']").append(
-    '<span class="popout one"><span class="type">Vision</span><i></i></span>'
-  );
-  $(".onepage-pagination li a[data-index='2']").append(
     '<span class="popout two"><span class="type">The Network</span><i></i></span>'
   );
-  $(".onepage-pagination li a[data-index='3']").append(
+  $(".onepage-pagination li a[data-index='2']").append(
     '<span class="popout three"><span class="type">Commitment</span><i></i></span>'
   );
-  $(".onepage-pagination li a[data-index='4']").append(
+  $(".onepage-pagination li a[data-index='3']").append(
     '<span class="popout four"><span class="type">How We Work</span><i></i></span>'
   );
-  $(".onepage-pagination li a[data-index='5']").append(
+  $(".onepage-pagination li a[data-index='4']").append(
     '<span class="popout five"><span class="type">Partner Support</span><i></i></span>'
   );
-  $(".onepage-pagination li a[data-index='6']").append(
+  $(".onepage-pagination li a[data-index='5']").append(
     '<span class="popout six"><span class="type">Impact</span><i></i></span>'
   );
-  $(".onepage-pagination li a[data-index='7']").append(
+  $(".onepage-pagination li a[data-index='6']").append(
     '<span class="popout seven"><span class="type">Press</span><i></i></span>'
   );
-  $(".onepage-pagination li a[data-index='8']").append(
+  $(".onepage-pagination li a[data-index='7']").append(
     '<span class="popout eight"><span class="type">About</span><i></i></span>'
   );
-  $(".onepage-pagination li a[data-index='9']").append(
+  $(".onepage-pagination li a[data-index='8']").append(
     '<span class="popout nine"><span class="type">Join Us</span><i></i></span>'
   );
 
@@ -236,13 +241,10 @@ $(function() {
       easing: animationEasing
     });
 
-    setTimeout(function(){
+    $('html, body').stop().animate({
+      scrollTop: $activeThumb.offset().top - 50
+    }, animationTime);
 
-      $('html, body').stop().animate({
-        scrollTop: $activeThumb.offset().top - 50
-      }, animationTime);
-
-    }, 2000);
 
   }
 

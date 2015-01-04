@@ -59,7 +59,7 @@ body.home {
     border-radius: 5px;
   }
 
-  #panel-1, #panel-2, #panel-9 {
+  #panel-0, #panel-1, #panel-8 {
     background: #0D857B; 
     // Green
 
@@ -81,17 +81,18 @@ body.home {
     
   }
 
-  #panel-1, #panel-2, #panel-9 {
+  #panel-0, #panel-1, #panel-7 {
     background-image: url(/assets/img/panel-1-01.png);
     background-size: cover;
     position: relative;
   }
 
-  #panel-9 {
+  #panel-7 {
+    background-color: #188177;
     background-image: url(/assets/img/final-01.png)
   }
 
-  #panel-6 {
+  #panel-4 {
 
     .slide {
       background-size: cover;
@@ -107,7 +108,7 @@ body.home {
 
   } // Impact Slider
 
-  #panel-2 {
+  #panel-1 {
 
     .points {
       content: '';
@@ -141,7 +142,7 @@ body.home {
 
   }
 
-  #panel-3, #panel-5, #panel-8 {
+  #panel-a, #panel-3, #panel-6 {
     background: #fff; 
     //text-align: right;
     // White
@@ -160,17 +161,17 @@ body.home {
 
   }
 
-  #panel-4 {
+  #panel-2 {
     background: #5C91B7
     // Light Blue
   }
 
-  #panel-6 {
+  #panel-4 {
     background: $yellow url(/assets/img/panel-6.png);
     background-size: cover;
   }
 
-  #panel-7 {
+  #panel-5 {
     background: #3367A0
     // Dark Blue
   }
@@ -326,9 +327,9 @@ body.home {
   transition: 300ms ease;
 }
 
+.viewing-page-a .onepage-pagination li a:before,
 .viewing-page-3 .onepage-pagination li a:before,
-.viewing-page-5 .onepage-pagination li a:before,
-.viewing-page-8 .onepage-pagination li a:before, {
+.viewing-page-6 .onepage-pagination li a:before, {
   background: $lightblue;
 }
 
@@ -344,13 +345,17 @@ body.home {
   background: rgba(255,255,255,1);
 }
 
-.viewing-page-3 .onepage-pagination li a.active:before,
-.viewing-page-5 .onepage-pagination li a.active:before,
-.viewing-page-8 .onepage-pagination li a.active:before,
-.viewing-page-3 .onepage-pagination li a:hover:before,
-.viewing-page-5 .onepage-pagination li a:hover:before,
-.viewing-page-8 .onepage-pagination li a:hover:before {
+.viewing-page-a .onepage-pagination li a.active:after,
+.viewing-page-3 .onepage-pagination li a.active:after,
+.viewing-page-6 .onepage-pagination li a.active:after,
+.viewing-page-a .onepage-pagination li a:hover:after,
+.viewing-page-3 .onepage-pagination li a:hover:after,
+.viewing-page-6 .onepage-pagination li a:hover:after,
+.viewing-page-a .onepage-pagination li a.sf-with-ul:after,
+.viewing-page-3 .onepage-pagination li a.sf-with-ul:after,
+.viewing-page-6 .onepage-pagination li a.sf-with-ul:after {
   background: $darkblue;
+  color: $darkblue;
 }
 
 .onepage-pagination .popout {
@@ -370,9 +375,9 @@ body.home {
   -webkit-transition: 300ms ease;
 }
 
+.viewing-page-a .onepage-pagination .popout,
 .viewing-page-3 .onepage-pagination .popout,
-.viewing-page-5 .onepage-pagination .popout,
-.viewing-page-8 .onepage-pagination .popout {
+.viewing-page-6 .onepage-pagination .popout {
   color: $darkblue;
 }
 
@@ -401,89 +406,89 @@ body.home {
   background-position: right center;
 }
 
+// .onepage-pagination .popout.one i {
+//   background-image: url(/assets/img/page-white-01.png);
+// }
 .onepage-pagination .popout.one i {
-  background-image: url(/assets/img/page-white-01.png);
-}
-.onepage-pagination .popout.two i {
   background-image: url(/assets/img/page-white-02.png);
 }
-.onepage-pagination .popout.three i {
-  background-image: url(/assets/img/page-white-03.png);
-}
-.onepage-pagination .popout.four i {
+// .onepage-pagination .popout.three i {
+//   background-image: url(/assets/img/page-white-03.png);
+// }
+.onepage-pagination .popout.two i {
   background-image: url(/assets/img/page-white-04.png);
 }
-.onepage-pagination .popout.five i {
+.onepage-pagination .popout.three i {
   background-image: url(/assets/img/page-white-05.png);
 }
-.onepage-pagination .popout.six i {
+.onepage-pagination .popout.four i {
   background-image: url(/assets/img/page-white-06.png);
 }
-.onepage-pagination .popout.seven i {
+.onepage-pagination .popout.five i {
   background-image: url(/assets/img/page-white-07.png);
 }
-.onepage-pagination .popout.eight i {
+.onepage-pagination .popout.six i {
   background-image: url(/assets/img/page-white-08.png);
 }
-.onepage-pagination .popout.nine i {
+.onepage-pagination .popout.seven i {
   background-image: url(/assets/img/page-white-09.png);
 }
 
+.viewing-page-a .onepage-pagination .popout.one i,
 .viewing-page-3 .onepage-pagination .popout.one i,
-.viewing-page-5 .onepage-pagination .popout.one i,
-.viewing-page-8 .onepage-pagination .popout.one i {
+.viewing-page-6 .onepage-pagination .popout.one i {
   background-image: url(/assets/img/1-Vision.png);
 }
+.viewing-page-a .onepage-pagination .popout.two i,
 .viewing-page-3 .onepage-pagination .popout.two i,
-.viewing-page-5 .onepage-pagination .popout.two i,
-.viewing-page-8 .onepage-pagination .popout.two i {
+.viewing-page-6 .onepage-pagination .popout.two i {
   background-image: url(/assets/img/2-PartnerGrowth.png);
 }
+.viewing-page-a .onepage-pagination .popout.three i,
 .viewing-page-3 .onepage-pagination .popout.three i,
-.viewing-page-5 .onepage-pagination .popout.three i,
-.viewing-page-8 .onepage-pagination .popout.three i {
+.viewing-page-6 .onepage-pagination .popout.three i {
   background-image: url(/assets/img/3-Join.png);
 }
+.viewing-page-a .onepage-pagination .popout.four i,
 .viewing-page-3 .onepage-pagination .popout.four i,
-.viewing-page-5 .onepage-pagination .popout.four i,
-.viewing-page-8 .onepage-pagination .popout.four i {
+.viewing-page-6 .onepage-pagination .popout.four i {
   background-image: url(/assets/img/4-Process.png);
 }
+.viewing-page-a .onepage-pagination .popout.five i,
 .viewing-page-3 .onepage-pagination .popout.five i,
-.viewing-page-5 .onepage-pagination .popout.five i,
-.viewing-page-8 .onepage-pagination .popout.five i {
+.viewing-page-6 .onepage-pagination .popout.five i {
   background-image: url(/assets/img/5-Research.png);
 }
+.viewing-page-a .onepage-pagination .popout.six i,
 .viewing-page-3 .onepage-pagination .popout.six i,
-.viewing-page-5 .onepage-pagination .popout.six i,
-.viewing-page-8 .onepage-pagination .popout.six i {
+.viewing-page-6 .onepage-pagination .popout.six i {
   background-image: url(/assets/img/6-Impact.png);
 }
+.viewing-page-a .onepage-pagination .popout.seven i,
 .viewing-page-3 .onepage-pagination .popout.seven i,
-.viewing-page-5 .onepage-pagination .popout.seven i,
-.viewing-page-8 .onepage-pagination .popout.seven i {
+.viewing-page-6 .onepage-pagination .popout.seven i {
   background-image: url(/assets/img/7-PressandMedia.png);
 }
+.viewing-page-a .onepage-pagination .popout.eight i,
 .viewing-page-3 .onepage-pagination .popout.eight i,
-.viewing-page-5 .onepage-pagination .popout.eight i,
-.viewing-page-8 .onepage-pagination .popout.eight i {
+.viewing-page-6 .onepage-pagination .popout.eight i {
   background-image: url(/assets/img/8-About.png);
 }
+.viewing-page-a .onepage-pagination .popout.nine i,
 .viewing-page-3 .onepage-pagination .popout.nine i,
-.viewing-page-5 .onepage-pagination .popout.nine i,
-.viewing-page-8 .onepage-pagination .popout.nine i {
+.viewing-page-6 .onepage-pagination .popout.nine i {
   background-image: url(/assets/img/9-Support.png);
 }
 
+.viewing-page-a .onepage-pagination .popout i,
 .viewing-page-3 .onepage-pagination .popout i,
-.viewing-page-5 .onepage-pagination .popout i,
-.viewing-page-8 .onepage-pagination .popout i {
+.viewing-page-6 .onepage-pagination .popout i {
 
 }
 
 // Second page animation
 
-.viewing-page-2 #homepage #panel-2 .points{
+.viewing-page-1 #homepage #panel-1 .points{
   top: 0;
   left: 0;
   margin-top: 00px;

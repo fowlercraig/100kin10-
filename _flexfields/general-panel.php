@@ -49,13 +49,13 @@
     <?php get_template_part('templates/blog', 'popup' ); ?>
   <? } ?>
 
-  <?php if ( $i == 6 ) { ?>
+  <?php if ( $i == 4 ) { ?>
     <img src="/assets/img/mobile-graphy.png" class="img-responsive mobile-img" />
   <? } ?>
   
   
   <?php // If we're on the second panel ?>
-  <?php if ( $i == 2 ) { ?>
+  <?php if ( $i == 1 ) { ?>
     <div class="points-1 points"></div>
     <div class="points-2 points"></div>
     <div class="points-3 points"></div>

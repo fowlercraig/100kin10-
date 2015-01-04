@@ -13,8 +13,14 @@
   }
   
   span {
-    font-size: 80%
+    font-size: 80%;
+    text-transform: lowercase;
   }
+}
+
+.lowercase {
+  font-size: 80%;
+    text-transform: lowercase;
 }
 
 .page-header h1,
