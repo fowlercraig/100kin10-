@@ -1,0 +1,63 @@
+.scheme-blue {
+
+  $darkcolor: #456BA1;
+  $lightcolor: #82BFDB;
+  $white: #fff;
+
+  color: #fff;
+
+  #foot {
+    color: $darkcolor;
+    background: $darkcolor;
+    a, small {color: $white}
+    .container, .widget-container > div {border-color: lighten($darkcolor, 20%);}
+    .lower_footer, .btn {background: rgba(0,0,0,.25);}
+  }
+  
+  .page-header {
+    background-color: #80BFDC;
+  }
+  
+  .page-header h1 {
+    color: #fff;
+  }
+  
+  .page-content  {
+    color: #436AA3;
+  }
+  
+  .content {
+    background: #436AA3;
+  }
+  
+  .content strong,
+  .content b {
+    font-weight: 200;
+  }
+  
+  .panel-title {
+    color: $lightcolor;
+    margin-bottom: 30px;
+  }
+  
+  .block .special > div {
+    background: $lightcolor;
+    color: $darkcolor;
+    border-color: $white;
+  }
+
+  .sf-arrows .sf-with-ul:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  margin-top: -3px;
+  height: 0;
+  width: 0;
+  /* order of following 3 rules important for fallbacks to work */
+  border: 5px solid transparent;
+  border-top-color: $darkcolor; /* edit this to suit design (no rgba in IE8) */
+  border-top-color: rgba(255,255,255,.5);
+}
+  
+}

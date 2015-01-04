@@ -1,0 +1,49 @@
+.scheme-lime_green {
+
+  $darkcolor: #fff;
+  $lightcolor: #A7CC6D;
+  $white: #6E9E4D;
+
+  color: $white;
+
+  #foot {
+    color: $darkcolor;
+    background: $lightcolor;
+    a, small {color: #fff}
+    .container, .widget-container > div {border-color: $white}
+    .lower_footer, .btn {background: $white}
+  }
+  
+  .page-header {
+    background-color: $lightcolor;
+  }
+  
+  .page-header h1 {
+    color: #fff;
+  }
+  
+  .page-content  {
+    color: $darkcolor;
+  }
+  
+  .content {
+    background: $darkcolor;
+  }
+  
+  .content strong,
+  .content b {
+    font-weight: 200;
+  }
+  
+  .panel-title {
+    color: $lightcolor;
+    margin-bottom: 30px;
+  }
+  
+  .block .special > div {
+    background: $lightcolor;
+    color: $darkcolor;
+    border-color: $white;
+  }
+  
+}

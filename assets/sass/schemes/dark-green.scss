@@ -1,0 +1,49 @@
+.scheme-dark_green {
+
+  $darkcolor: #298A7E;
+  $lightcolor: #9BCDB5;
+  $white: #fff;
+
+  color: #fff;
+
+  #foot {
+    color: $darkcolor;
+    background: $darkcolor;
+    a, small {color: $white}
+    .container, .widget-container > div {border-color: lighten($darkcolor, 20%);}
+    .lower_footer, .btn {background: rgba(0,0,0,.25);}
+  }
+  
+  .page-header {
+    background-color: $lightcolor;
+  }
+  
+  .page-header h1 {
+    color: #fff;
+  }
+  
+  .page-content  {
+    color: $darkcolor;
+  }
+  
+  .content {
+    background: $darkcolor;
+  }
+  
+  .content strong,
+  .content b {
+    font-weight: 200;
+  }
+  
+  .panel-title {
+    color: $lightcolor;
+    margin-bottom: 30px;
+  }
+  
+  .block .special > div {
+    background: $lightcolor;
+    color: $darkcolor;
+    border-color: $white;
+  }
+  
+}

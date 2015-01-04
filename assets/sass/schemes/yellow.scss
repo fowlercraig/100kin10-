@@ -1,0 +1,50 @@
+.scheme-yellow {
+
+  $darkcolor: #F1CC6D;
+  $lightcolor: #E6B83F;
+  $white: #414341;
+
+  color: #fff;
+
+  #foot {
+    color: $darkcolor;
+    background: $darkcolor;
+    a, small {color: $white}
+    .container, .widget-container > div {border-color: lighten($darkcolor, 20%);}
+    .lower_footer, .btn {background: $lightcolor;}
+  }
+  
+  .page-header {
+    background-color: $lightcolor;
+  }
+  
+  .page-header h1 {
+    color: $white;
+  }
+  
+  .page-content {
+    color: $white;
+  }
+  
+  .content {
+    background: $darkcolor;
+    color: $white;
+  }
+  
+  .content strong,
+  .content b {
+    font-weight: 200;
+  }
+  
+  .panel-title {
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  .block .special > div {
+    background: $lightcolor;
+    color: #fff;
+    border-color: $white;
+  }
+  
+}

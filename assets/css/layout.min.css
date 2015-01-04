@@ -1,0 +1,1096 @@
+@charset "UTF-8";
+body {
+  -webkit-transition: background-color 600ms ease; }
+
+body.home {
+  background: #138D85; }
+
+body.faq {
+  background: #fff; }
+
+body.viewing-page-3,
+body.viewing-page-5,
+body.viewing-page-8 {
+  background: #fff; }
+
+body.viewing-page-4,
+body.viewing-page-7 {
+  background: #67A5D6; }
+
+body.viewing-page-6 {
+  background: #EFBC33; }
+
+#panel-1,
+#panel-2 {
+  background-image: url(/assets/img/panel-1-01.png);
+  background-size: cover;
+  position: relative; }
+
+#panel-2 .points {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -300px;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  -webkit-transition: 1000ms ease;
+  background-image: url(/assets/img/points1-01.png);
+  background-size: cover; }
+
+#panel-2 .points-2 {
+  background-image: url(/assets/img/points2-01.png);
+  background-size: cover;
+  -webkit-transition: 500ms ease;
+  margin-top: -200px; }
+
+#panel-2 .points-3 {
+  background-image: url(/assets/img/points3-01.png);
+  background-size: cover;
+  -webkit-transition: 1500ms ease;
+  margin-top: -700px; }
+
+.viewing-page-2 #panel-2 .points {
+  top: 0;
+  left: 0;
+  margin-top: 00px;
+  opacity: 1;
+  background-size: cover; }
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #138D85;
+  z-index: 10;
+  padding-top: 140px; }
+
+#overlay i {
+  color: #fff;
+  font-size: 34px;
+  position: absolute;
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite; }
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+#header {
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  padding-top: 40px; }
+
+#header.stuck {
+  position: fixed;
+  background: none; }
+
+.home #header {
+  position: fixed; }
+
+#header h1 {
+  font-family: "Brandon Grot W01 Bold";
+  text-transform: uppercase;
+  margin: 0;
+  color: #fff;
+  letter-spacing: -2px;
+  -webkit-transition: 300ms ease; }
+
+.page.home #header h1 {
+  font-size: 75px; }
+
+.page #header h1 {
+  font-size: 45px; }
+
+.faq #header h1 a {
+  color: #4072B5; }
+
+#header h1 a {
+  color: inherit;
+  text-decoration: none; }
+
+.viewing-page-3 #header h1,
+.viewing-page-5 #header h1,
+.viewing-page-8 #header h1 {
+  color: #4072B5; }
+
+#header h1 span {
+  font-family: "Brandon Grot W01 Medium", san-serif;
+  font-size: 70%;
+  letter-spacing: -1px; }
+
+#header .menu {
+  text-align: right;
+  margin: 0;
+  padding: 13px 0 !important;
+  font-family: "Brandon Grot W01 Bold";
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+#header .menu li {
+  position: relative; }
+
+#header .menu a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: color 300ms ease; }
+
+#header .menu a.sf-with-ul {
+  padding-right: 20px;
+  position: relative; }
+
+#header .menu a.sf-with-ul:after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin: 0;
+  margin-top: -3px; }
+
+#header .menu .sub-menu {
+  position: absolute;
+  width: 200px;
+  right: 0;
+  padding-right: 15px;
+  right: 10px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2); }
+
+#header .menu .sub-menu li {
+  display: block; }
+
+#header .menu .sub-menu li:last-child {
+  margin: 0; }
+
+.viewing-page-3 #header .menu a,
+.viewing-page-5 #header .menu a,
+.viewing-page-8 #header .menu a {
+  color: #4072B5; }
+
+.faq #header .menu a {
+  color: #4072B5; }
+
+#header .menu a:hover {
+  border-bottom: 1px solid #fff; }
+
+#header .menu li {
+  display: inline;
+  margin-left: 10px; }
+
+#content {
+  width: 100%; }
+
+#content .section {
+  padding: 120px 0;
+  box-sizing: border-box;
+  overflow: hidden; }
+
+#content .table {
+  height: 100%;
+  display: table;
+  width: 100%; }
+
+#content .table .cell {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle; }
+
+#content .row {
+  z-index: 99; }
+
+#content .light-bg .six.columns {
+  width: auto;
+  padding: 0;
+  float: right; }
+
+#content .title {
+  font-family: "TradeGothicW01-BoldCn20_675334", san-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 50px;
+  text-rendering: optimizeLegibility; }
+
+#content .light-bg .title {
+  color: #4072B5;
+  margin-bottom: 20px; }
+
+#content .subtitle {
+  font-family: "Brandon Grot W01 Black";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 32px;
+  line-height: 1.3;
+  margin-bottom: 12px;
+  color: rgba(255, 255, 255, 0.5); }
+
+#content .light-bg .subtitle {
+  color: #67A5D6; }
+
+#content .desc {
+  font-family: "Brandon Grot W01 Medium", san-serif;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 25px;
+  line-height: 1.3; }
+
+#content .desc p:last-child {
+  margin: 0; }
+
+#content .light-bg .desc {
+  color: #67A5D6; }
+
+#content .light-bg .desc .bigtype {
+  color: #EFBC33;
+  font-size: 68px;
+  font-family: "BrandonGrotW01-Regular";
+  line-height: 1; }
+
+#content .light-bg .desc .bigtype a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid; }
+
+#content .desc strong,
+#content .desc strong b {
+  font-weight: 200;
+  font-family: "Brandon Grot W01 Bold";
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+  font-size: 24px; }
+
+#content .light-bg .desc strong,
+#content .light-bg .desc strong b {
+  color: #67A5D6; }
+
+#content section {
+  padding: 100px 0; }
+
+#content .text-right {
+  text-align: right; }
+
+.onepage-pagination li {
+  margin: 0; }
+
+.onepage-pagination li a {
+  padding: 0;
+  display: block;
+  padding: 11px 11px;
+  position: relative; }
+
+.onepage-pagination li a:before {
+  width: 8px;
+  height: 8px;
+  left: 50%;
+  content: '';
+  margin-left: -4px;
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.35);
+  -webkit-transition: 300ms ease; }
+
+.viewing-page-3 .onepage-pagination li a:before,
+.viewing-page-5 .onepage-pagination li a:before,
+.viewing-page-8 .onepage-pagination li a:before {
+  background: #67A5D6; }
+
+.onepage-pagination li a.active:before,
+.onepage-pagination li a:hover:before {
+  width: 8px;
+  height: 8px;
+  border: none;
+  display: block;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: white; }
+
+.viewing-page-3 .onepage-pagination li a.active:before,
+.viewing-page-5 .onepage-pagination li a.active:before,
+.viewing-page-8 .onepage-pagination li a.active:before,
+.viewing-page-3 .onepage-pagination li a:hover:before,
+.viewing-page-5 .onepage-pagination li a:hover:before,
+.viewing-page-8 .onepage-pagination li a:hover:before {
+  background: #4072B5; }
+
+.onepage-pagination .popout {
+  position: absolute;
+  right: 0;
+  font-family: "Brandon Grot W01 Bold";
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-top: -5px;
+  margin-right: 20px;
+  padding-right: 35px;
+  opacity: 0;
+  -webkit-transition: 300ms ease; }
+
+.viewing-page-3 .onepage-pagination .popout,
+.viewing-page-5 .onepage-pagination .popout,
+.viewing-page-8 .onepage-pagination .popout {
+  color: #4072B5; }
+
+.onepage-pagination li a:hover .popout,
+.onepage-pagination li a.active .popout {
+  opacity: 1;
+  margin-right: 25px; }
+
+.onepage-pagination .popout i {
+  display: block;
+  height: 24px;
+  width: 27px;
+  float: right;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: -5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center; }
+
+.onepage-pagination .popout.one i {
+  background-image: url(/assets/img/page-white-01.png); }
+
+.onepage-pagination .popout.two i {
+  background-image: url(/assets/img/page-white-02.png); }
+
+.onepage-pagination .popout.three i {
+  background-image: url(/assets/img/page-white-03.png); }
+
+.onepage-pagination .popout.four i {
+  background-image: url(/assets/img/page-white-04.png); }
+
+.onepage-pagination .popout.five i {
+  background-image: url(/assets/img/page-white-05.png); }
+
+.onepage-pagination .popout.six i {
+  background-image: url(/assets/img/page-white-06.png); }
+
+.onepage-pagination .popout.seven i {
+  background-image: url(/assets/img/page-white-07.png); }
+
+.onepage-pagination .popout.eight i {
+  background-image: url(/assets/img/page-white-08.png); }
+
+.onepage-pagination .popout.nine i {
+  background-image: url(/assets/img/page-white-09.png); }
+
+.viewing-page-3 .onepage-pagination .popout.one i,
+.viewing-page-5 .onepage-pagination .popout.one i,
+.viewing-page-8 .onepage-pagination .popout.one i {
+  background-image: url(/assets/img/1-Vision.png); }
+
+.viewing-page-3 .onepage-pagination .popout.two i,
+.viewing-page-5 .onepage-pagination .popout.two i,
+.viewing-page-8 .onepage-pagination .popout.two i {
+  background-image: url(/assets/img/2-PartnerGrowth.png); }
+
+.viewing-page-3 .onepage-pagination .popout.three i,
+.viewing-page-5 .onepage-pagination .popout.three i,
+.viewing-page-8 .onepage-pagination .popout.three i {
+  background-image: url(/assets/img/3-Join.png); }
+
+.viewing-page-3 .onepage-pagination .popout.four i,
+.viewing-page-5 .onepage-pagination .popout.four i,
+.viewing-page-8 .onepage-pagination .popout.four i {
+  background-image: url(/assets/img/4-Process.png); }
+
+.viewing-page-3 .onepage-pagination .popout.five i,
+.viewing-page-5 .onepage-pagination .popout.five i,
+.viewing-page-8 .onepage-pagination .popout.five i {
+  background-image: url(/assets/img/5-Research.png); }
+
+.viewing-page-3 .onepage-pagination .popout.six i,
+.viewing-page-5 .onepage-pagination .popout.six i,
+.viewing-page-8 .onepage-pagination .popout.six i {
+  background-image: url(/assets/img/6-Impact.png); }
+
+.viewing-page-3 .onepage-pagination .popout.seven i,
+.viewing-page-5 .onepage-pagination .popout.seven i,
+.viewing-page-8 .onepage-pagination .popout.seven i {
+  background-image: url(/assets/img/7-PressandMedia.png); }
+
+.viewing-page-3 .onepage-pagination .popout.eight i,
+.viewing-page-5 .onepage-pagination .popout.eight i,
+.viewing-page-8 .onepage-pagination .popout.eight i {
+  background-image: url(/assets/img/8-About.png); }
+
+.viewing-page-3 .onepage-pagination .popout.nine i,
+.viewing-page-5 .onepage-pagination .popout.nine i,
+.viewing-page-8 .onepage-pagination .popout.nine i {
+  background-image: url(/assets/img/9-Support.png); }
+
+#press-logos {
+  background: transparent;
+  position: relative;
+  margin-bottom: 0;
+  height: auto;
+  margin-top: 20px; }
+
+#press-logos .centerdivider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #fff;
+  left: 50%; }
+
+#press-logos .pressitem {
+  border-bottom: 1px solid #fff; }
+
+#press-logos a {
+  display: block;
+  -webkit-transition: 300ms ease; }
+
+#press-logos a:hover {
+  opacity: .5; }
+
+#press-logos img {
+  display: block;
+  max-width: 100%; }
+
+#press-logos .pressitem:nth-child(6),
+#press-logos .pressitem:nth-child(5) {
+  border-bottom: none; }
+
+#foot {
+  position: relative;
+  bottom: 0;
+  margin-top: -110px; }
+
+.home #foot {
+  position: fixed;
+  bottom: 0;
+  z-index: 9;
+  width: 100%;
+  height: 110px;
+  bottom: -110px; }
+
+#foot {
+  font-family: "Brandon Grot W01 Bold";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  color: #138D85;
+  -webkit-transition: 300ms ease; }
+
+.home #foot {
+  color: rgba(255, 255, 255, 0.5); }
+
+.home.viewing-page-9 #foot {
+  bottom: 0; }
+
+#foot small {
+  display: block;
+  line-height: 1.2;
+  color: #138D85; }
+
+.home #foot small {
+  color: #fff; }
+
+#foot a {
+  color: inherit;
+  text-decoration: none; }
+
+#foot a.btn {
+  background: #138D85;
+  padding: 3px 7px;
+  color: #fff;
+  margin: 0;
+  border-radius: 4px; }
+
+.home #foot a.btn {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff; }
+
+#foot .wrapper {
+  border-top: 1px solid #ddd;
+  padding: 20px 0; }
+
+.home #foot .row g {
+  border-top: 1px solid rgba(255, 255, 255, 0.2); }
+
+#foot .widget-container {
+  text-align: center; }
+
+#foot .widget-container > div {
+  border-right: 1px solid  #ddd;
+  height: 25px; }
+
+.home #foot .widget-container > div {
+  border-right: 1px solid rgba(255, 255, 255, 0.25); }
+
+#foot .widget-container:last-child > div {
+  border-right: none; }
+
+#foot .social-links {
+  display: inline-block; }
+
+#foot .lower_footer {
+  background: #138D85;
+  color: #fff; }
+
+.home #foot .lower_footer {
+  background: rgba(255, 255, 255, 0.25); }
+
+#foot .lower_footer .wrapper {
+  border: none;
+  padding: 10px 0; }
+
+#foot .lower_footer .widget-container {
+  text-align: left; }
+
+#foot .lower_footer .widget-container > div {
+  height: auto; }
+
+#foot .lower_footer h1 {
+  margin: 0;
+  display: inline;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1; }
+
+.home #foot .lower_footer h1 {
+  color: #fff; }
+
+#foot .lower_footer h1 span {
+  font-size: 80%;
+  font-family: "BrandonGrotW01-Regular"; }
+
+#foot .lower_footer p {
+  display: inline; }
+
+.btn {
+  color: #138D85;
+  background: #fff;
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Brandon Grot W01 Bold";
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 7px 13px 5px;
+  border-radius: 5px; }
+
+.down {
+  display: block;
+  text-align: center;
+  font-family: "TradeGothicW01-BoldCn20_675334", san-serif;
+  text-transform: uppercase;
+  color: #EFBC33;
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-decoration: none; }
+
+#panel-1 .down {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  cursor: pointer;
+  -webkit-transition: 200ms ease; }
+
+#panel-1 .down:hover {
+  color: #fff;
+  padding-bottom: 10px; }
+
+#panel-1 .down:after {
+  content: '';
+  font-family: 'SSGizmo';
+  display: block;
+  margin-top: 10px; }
+
+#panel-6 .slide.one {
+  background-image: url(/assets/img/impact-01.png);
+  background-size: cover; }
+
+#panel-6 .slide.two {
+  background-size: cover; }
+
+#panel-9 {
+  background-image: url(/assets/img/final-01.png);
+  background-size: cover; }
+
+#commitments {
+  padding-top: 10px; }
+
+#commitments li {
+  margin: 0;
+  display: block;
+  width: 33%;
+  float: left; }
+
+#commitments .icon {
+  margin: 0 10px 20px; }
+
+#commitments .icon img {
+  display: block;
+  max-width: 100%; }
+
+#commitments h4 {
+  color: #fff;
+  text-align: center;
+  font-family: "Brandon Grot W01 Bold";
+  font-size: 13px;
+  line-height: 1.4;
+  letter-spacing: 2px;
+  margin: 0 10px; }
+
+.slides {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
+.slides .slides_container,
+.slides .slides_container .slide {
+  width: 100%;
+  height: 100%; }
+
+.slides .slides_container > div {
+  height: 100% !important; }
+
+.page-header {
+  background: #138D85;
+  padding: 180px 0 50px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.page-header h1 {
+  margin: 0;
+  font-family: "TradeGothicW01-BoldCn20_675334", san-serif;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 60px;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 0; }
+
+.page-header .page-content {
+  font-family: "Brandon Grot W01 Black";
+  color: #fff;
+  font-size: 24px;
+  padding-top: 20px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.page-header .page-content p {
+  margin: 0; }
+
+.content {
+  padding-top: 80px;
+  padding-bottom: 120px;
+  background: #fff; }
+
+#content .partners .content,
+#content .faq .content {
+  padding-top: 0; }
+
+#content .content .title {
+  font-family: "Brandon Grot W01 Black";
+  line-height: 1;
+  font-size: 24px; }
+
+#content .content .desc p {
+  font-size: 36px;
+  font-family: "BrandonGrotW01-Regular"; }
+
+#content .content .desc.special p {
+  font-family: "BrandonGrotW01-RegularI";
+  font-size: 25px; }
+
+#content .content .desc.special p strong,
+#content .content .desc.special p b {
+  font-family: "Brandon Grot W01 Bold";
+  text-transform: uppercase;
+  font-size: 80%;
+  letter-spacing: 1px; }
+
+#content .block {
+  margin-bottom: 60px; }
+
+#content .block .title {
+  margin: 0;
+  margin-bottom: 20px; }
+
+#content .block .desc.special > div {
+  padding: 20px;
+  color: #fff; }
+
+#content .block .desc.right > div {
+  border-left: 20px solid #4A4A4A; }
+
+#content .block .desc.left > div {
+  border-right: 20px solid #4A4A4A; }
+
+#content .page-header {
+  background-size: 100% auto !important;
+  background-position: center center; }
+
+/* Page Colors */
+.faq .page-header {
+  background: #fff; }
+
+.faq .page-header h1 {
+  color: #EFBC33; }
+
+.above-beyond-commitments .page-header {
+  background: #80BFDC; }
+
+.above-beyond-commitments .page-header h1 {
+  color: #EFBC33; }
+
+.above-beyond-commitments .page-content {
+  color: #436AA3; }
+
+.above-beyond-commitments .content {
+  background: #436AA3;
+  color: #fff; }
+
+.above-beyond-commitments .content .desc p {
+  color: #fff; }
+
+.above-beyond-commitments .content .desc p {
+  color: #fff; }
+
+/* Funding */
+#content.funding .page-header {
+  background: #A7CC6D url(/assets/img/generic.png); }
+
+#content.funding .page-header h1 {
+  color: #6E9E4D; }
+
+#content.funding .page-content p {
+  color: #fff; }
+
+#content.funding .content .title {
+  color: #A7CC6D; }
+
+#content.funding .content .desc p {
+  color: #6E9E4D; }
+
+#content.funding .block .desc.special > div {
+  background: #A7CC6D;
+  border-color: #6E9E4D; }
+
+/* Research */
+#content.research .page-header {
+  background: #9ACEB5 url(/assets/img/generic.png); }
+
+#content.research .page-header h1 {
+  color: #fff; }
+
+#content.research .page-content p {
+  color: #248A7E; }
+
+#content.research .content {
+  background: #248A7E; }
+
+#content.research .content .title {
+  color: #9ACEB5; }
+
+#content.research .content .desc p {
+  color: #fff; }
+
+#content.research .block .desc.special > div {
+  background: #9ACEB5;
+  border-color: #fff; }
+
+#content.research .block .desc.special > div p,
+#content.research .block .desc.special > div p * {
+  color: #248A7E; }
+
+#content .block .desc.special > div p,
+#content .block .desc.special > div p * {
+  color: #fff; }
+
+body.faq {
+  background: url(/assets/img/faq-01.png);
+  background-size: 100% auto;
+  padding-top: 0; }
+
+#content .content .faq .item {
+  text-align: left;
+  margin: 0;
+  padding: 50px 0; }
+
+#content .content .faq .desc,
+#content .content .faq .desc p {
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-family: "Brandon Grot W01 Bold"; }
+
+#content .content .faq#faq-1 .desc p {
+  color: #4072B5; }
+
+#content .content .faq#faq-2 .desc p {
+  color: #2A8A7E; }
+
+#content .content .faq .title {
+  font-family: "TradeGothicW01-BoldCn20_675334", san-serif;
+  color: #EFBC33;
+  font-size: 48px;
+  margin-bottom: 0; }
+
+#faqlist {
+  margin-bottom: 0;
+  overflow: hidden; }
+
+#faqlist h2 {
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  line-height: 1;
+  margin-bottom: 0;
+  font-size: 22px;
+  line-height: 1.4;
+  font-family: "Brandon Grot W01 Bold";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px;
+  -webkit-transition: background-color 300ms ease;
+  cursor: pointer; }
+
+#faqlist h2:hover {
+  background: #335a8f; }
+
+#faqlist h2.open {
+  background: #335a8f;
+  border: none;
+  position: relative;
+  z-index: 0;
+  margin: 0 -40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.2); }
+
+#faqlist h2 a {
+  color: #fff;
+  text-decoration: none; }
+
+#faqlist p {
+  padding: 25px 0;
+  color: #fff;
+  font-size: 18px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: "BrandonGrotW01-Regular"; }
+
+#faq-1 #faqlist {
+  background: #436AA3; }
+
+#faq-1 #faqlist > div {
+  background: #67A5D6;
+  text-align: center; }
+
+#faq-2 #faqlist {
+  background: #248A7E; }
+
+#faq-2 #faqlist > div {
+  background: #28AF9D;
+  text-align: center; }
+
+#content .bio {
+  color: #333; }
+
+#content .bip p {
+  color: #333; }
+
+#content .bio .title {
+  color: #138D85 !important;
+  font-family: "TradeGothicW01-BoldCn20_675334", san-serif;
+  font-size: 36px;
+  margin-bottom: 10px; }
+
+#content .bio .subtitle {
+  color: #138D85;
+  font-family: "BrandonGrotW01-RegularI";
+  text-transform: none;
+  letter-spacing: 0; }
+
+#content .bio .thumbnail img {
+  border-radius: 50%;
+  display: block;
+  width: 100%; }
+
+#content .bio .bio,
+#content .bio .bio p {
+  font-family: "BrandonGrotW01-Regular";
+  font-size: 22px;
+  line-height: 1.4; }
+
+#content .bio .questions {
+  font-size: 22px; }
+
+#content .bio .questions p {
+  font-family: "BrandonGrotW01-RegularI"; }
+
+#content .bio .questions p strong {
+  font-family: "Brandon Grot W01 Bold";
+  text-transform: uppercase;
+  font-size: 80%;
+  letter-spacing: 1px;
+  font-weight: 200; }
+
+#partners-grid {
+  position: relative; }
+
+#partners-grid li {
+  position: relative;
+  float: none;
+  display: none;
+  margin: 0 8px;
+  vertical-align: top; }
+
+#partners-grid li:after {
+  content: '';
+  width: 0;
+  height: 0;
+  margin: auto;
+  clear: both;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -10px;
+  left: 50%;
+  margin-left: -10px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #138D85;
+  opacity: 0;
+  transition: 300ms ease;
+  transition-delay: 300ms; }
+
+#partners-grid li.active:after {
+  margin-bottom: 0;
+  opacity: 1; }
+
+#partners-grid .mix > div {
+  height: 200px;
+  background: #eee;
+  margin: 0 0;
+  margin-bottom: 20px; }
+
+#containerPartner {
+  clear: both;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  z-index: 150;
+  left: 0;
+  width: 100%; }
+
+#containerPartner #partner > div {
+  background: #138D85;
+  padding: 25px; }
+
+#partner {
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: "BrandonGrotW01-Regular";
+  font-size: 18px; }
+
+#partner p {
+  margin-bottom: 0; }
+
+#partner h2.title {
+  color: #fff !important;
+  margin: 0;
+  margin-bottom: 10px; }
+
+#partners-grid .item > div {
+  padding: 25px; }
+
+#partners-grid .item .title > div {
+  text-transform: none; }
+
+.pager-list {
+  font-family: "Brandon Grot W01 Bold";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px; }
+
+.pager-list {
+  color: #9ED5BE; }
+
+.pager-list span {
+  cursor: pointer; }
+
+.pager-list .page-number.active {
+  color: #138D85; }
+
+.controls {
+  padding: 20px 0;
+  font-family: "Brandon Grot W01 Bold";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #E9F5F1;
+  margin-bottom: 30px; }
+
+.controls #input {
+  float: right;
+  margin: 0;
+  border: none;
+  border-radius: 20px;
+  padding: 7px 10px;
+  display: block;
+  margin-top: -5px; }
+
+.controls.stuck {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  border-bottom: 1px solid #fff;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1); }
+
+.controls button {
+  background: none;
+  border: none;
+  text-shadow: none;
+  padding: 0;
+  color: #9ED5BE;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-right: 10px;
+  font-weight: 200;
+  transition: color 300ms ease;
+  -webkit-font-smoothing: antialiased; }
+
+.controls button.active,
+.controls button:active {
+  color: #138D85;
+  outline: none; }
+
+.mobile-img {
+  display: none; }
+
+/* Smaller than standard 960 (devices and browsers) */
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 740px) and (max-width: 980px) {
+  #foot .widget-container {
+    margin-bottom: 20px !important;
+    border: none; } }
+/* All Mobile Sizes (devices and browser) */
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */

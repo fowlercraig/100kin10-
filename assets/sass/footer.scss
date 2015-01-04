@@ -1,0 +1,150 @@
+#foot {
+  position: relative;
+  box-sizing: content-box!important;
+  * {
+    box-sizing: content-box!important;
+  }
+}
+
+.home #foot {
+  position: fixed;
+  bottom: 0;
+  z-index: 9;
+  width: 100%;
+  height: 110px;
+  bottom: -110px; 
+
+}
+
+#foot {
+  font-family: $brandonbold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  color: $green;
+  -webkit-transition: 300ms ease;
+
+  .wrapper {
+    padding: 15px 0;
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+      overflow: hidden;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+}
+
+.home #foot {
+  color: rgba(255, 255, 255, .5);
+}
+
+.home.viewing-page-9 #foot {
+  bottom: 0;
+}
+
+#foot small {
+  display: block;
+  line-height: 1.2;
+  color: $green;
+}
+
+.home #foot small {
+  color: #fff;
+}
+
+#foot a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#foot a.btn {
+  background: $green;
+  padding: 3px 7px;
+  color: #fff;
+  margin: 0;
+  border-radius: 4px;
+}
+
+.home #foot a.btn {
+  background: rgba(255, 255, 255, .25);
+  color: #fff;
+}
+
+#foot .container {
+  border-top: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.home #foot .container {
+  border-top: 1px solid rgba(255,255,255,.2);
+}
+
+#foot .widget-container {
+  text-align: center;
+}
+
+#foot .widget-container > div{
+  border-right: 1px solid  #ddd;
+  height: 25px;
+}
+
+.home #foot .widget-container > div{
+  border-right: 1px solid rgba(255, 255, 255, .25);
+}
+
+#foot .widget-container:last-child > div{
+  border-right: none;
+}
+
+#foot .social-links {
+  display: inline-block;
+}
+
+#foot .lower_footer {
+  background: $green;
+  color: #fff;
+}
+
+.home #foot .lower_footer {
+  background: rgba(255, 255, 255, .25);
+}
+
+#foot .lower_footer .container {
+  border: none;
+  padding: 10px 0;
+}
+
+#foot .lower_footer .widget-container {
+  text-align: left;
+}
+
+#foot .lower_footer .widget-container > div {
+  height: auto;
+}
+
+#foot .lower_footer h1 {
+  margin: 0;
+  display: inline;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.home #foot .lower_footer h1 {
+  color: #fff;
+}
+
+#foot .lower_footer h1 span {
+  font-size: 80%;
+  font-family: $brandonregular;
+}
+
+#foot .lower_footer p {
+  display: inline;
+} 

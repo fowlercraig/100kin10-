@@ -1,0 +1,42 @@
+.scheme-blue {
+  color: #fff; }
+  .scheme-blue #foot {
+    color: #456BA1;
+    background: #456BA1; }
+    .scheme-blue #foot a, .scheme-blue #foot small {
+      color: #fff; }
+    .scheme-blue #foot .container, .scheme-blue #foot .widget-container > div {
+      border-color: #82a0ca; }
+    .scheme-blue #foot .lower_footer, .scheme-blue #foot .btn {
+      background: rgba(0, 0, 0, 0.25); }
+  .scheme-blue .page-header {
+    background-color: #80BFDC; }
+  .scheme-blue .page-header h1 {
+    color: #fff; }
+  .scheme-blue .page-content {
+    color: #436AA3; }
+  .scheme-blue .content {
+    background: #436AA3; }
+  .scheme-blue .content strong,
+  .scheme-blue .content b {
+    font-weight: 200; }
+  .scheme-blue .panel-title {
+    color: #82BFDB;
+    margin-bottom: 30px; }
+  .scheme-blue .block .special > div {
+    background: #82BFDB;
+    color: #456BA1;
+    border-color: #fff; }
+  .scheme-blue .sf-arrows .sf-with-ul:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    margin-top: -3px;
+    height: 0;
+    width: 0;
+    /* order of following 3 rules important for fallbacks to work */
+    border: 5px solid transparent;
+    border-top-color: #456BA1;
+    /* edit this to suit design (no rgba in IE8) */
+    border-top-color: rgba(255, 255, 255, 0.5); }

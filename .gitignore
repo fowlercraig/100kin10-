@@ -1,0 +1,9 @@
+
+*.json
+*.md
+
+assets/bower_components/Selecter/jquery.fs.selecter.js
+
+assets/bower_components/Selecter/src/jquery.fs.selecter.js
+
+assets/bower_components/velocity/velocity.js
