@@ -31,7 +31,7 @@
 
 <header id="header">
   <div class="row">
-    <div class="desktop-4"><h1 id="logo"><a href="/">100K<span>in</span>10</a></h1></div>
+    <div class="desktop-4"><h1 id="logo"><a href="/">100K<span>IN</span>10</a></h1></div>
     <div class="desktop-8 mobile-3 text-right"><?php wp_nav_menu( array( 'menu_class' => 'sf-menu menu','walker' => new MV_Cleaner_Walker_Nav_Menu() ) );?></div>
   </div>
 </header>
