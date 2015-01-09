@@ -1,7 +1,7 @@
 // @codekit-prepend "../javascripts/easing.js"; 
 // @codekit-prepend "../javascripts/jquery.onepage-scroll.min.js";
 // @codekit-prepend "../javascripts/jquery.clearable.js"; 
-// @codekit-prepend "../bower_components/velocity/velocity.js"; 
+// @codekit-prepend "../bower_components/velocity/jquery.velocity.js"; 
 // @codekit-prepend "../bower_components/slides/source/slides.min.jquery.js";
 // @codekit-prepend "../bower_components/Jquery-Collapse/src/jquery.collapse.js";
 // @codekit-prepend "../bower_components/superfish/dist/js/superfish.min.js";
@@ -60,6 +60,10 @@ $(function() {
     }, {
       delay: 1000
     });
+  });
+
+  $( window ).load(function() {
+   
   });
 
   $('#input').clearable();
@@ -388,6 +392,12 @@ $(function() {
       },
       onMixEnd: function(state) {
         $("#partners-grid").sizer();
+        $("#partners-grid").velocity({
+          opacity: 1,
+        });
+        $("#loader").velocity({
+          opacity: 0,
+        });
       }
     },
   });

@@ -21,13 +21,22 @@
   </div>
 </div>
 
+<div id="loader">
+  <br>
+  <div class="row">
+    <div class="desktop-4">
+      <div class="spinner"></div>
+    </div>
+  </div>
+</div>
+
 <div class="row">
 <ul id="partners-grid">
 <?php 
   $temp = $wp_query; 
   $wp_query = null; 
   $wp_query = new WP_Query(); 
-  $wp_query->query('showposts=999&orderby=title&order=asc&post_type=partner'.'&paged='.$paged); 
+  $wp_query->query('showposts=-1&orderby=title&order=asc&post_type=partner'.'&paged='.$paged); 
 
   while ($wp_query->have_posts()) : $wp_query->the_post();
   get_template_part('templates/partner', 'item' );

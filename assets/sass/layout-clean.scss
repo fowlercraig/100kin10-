@@ -33,6 +33,11 @@
   animation: scaleout 1.0s infinite ease-in-out;
 }
 
+#loader .spinner {
+  float: left;
+  background-color: RGBA(168, 202, 113, 1);
+}
+
 @-webkit-keyframes scaleout {
   0% { -webkit-transform: scale(0.0) }
   100% {
@@ -613,13 +618,18 @@ $heightsituation: 300px;
     }
   
   }
+
+  #loader {
+    position: absolute;
+    width: 100%;
+  }
   
   #partners-grid {
 
     margin: 0;
     margin-top: 30px;
     position: relative;
-
+    opacity: 0;
   
     .item {
     
