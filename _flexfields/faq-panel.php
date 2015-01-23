@@ -13,7 +13,7 @@
 
 
   <?php if(get_field('faq')): ?>
-  <div id="faqlist" data-collapse>
+  <div id="faqlist" data-collapse="accordion">
     <?php while(has_sub_field('faq')): ?>
     <div class="question">
       <div class="row">
